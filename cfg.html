@@ -1,0 +1,184 @@
+<html>
+ <head>
+  <title>
+   Dashboard
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/estilo.css">
+ </head>
+ <body>
+  <div class="container">
+   <div class="sidebar">
+    <img alt="Logo" src="img/logo.png" height="40" width="40">
+    <a href="index.html"><i class="fas fa-th-large"></i></a>
+    <a href="old.html"><i class="fas fa-chart-line"></i></a>
+    <a href="notf.html"><i class="fas fa-bell"></i></a>    
+    <i class="fas fa-cog"></i>
+   </div>
+   <div class="conteudo">
+    <header>
+     <input placeholder="Pesquisa" type="text"/>
+     <div class="user-info">
+      <i class="fas fa-plus-circle">
+      </i> 
+      <img alt="Usuário" src="img/user.png" height="40" width="40"/>
+      <span>
+       Joilson
+       <br/>
+       Administrador
+      </span>
+     </div>
+    </header>
+    <div class="main">
+     <div class="left-panel">
+      <div class="painel">
+        <h2>
+            Semáforos
+           </h2>
+           <table>
+            <thead>
+             <tr>
+              <th>SEMAFORO</th>
+              <th>CRUZAMENTO</th>
+              <th>ACIONADOR</th>
+              <th>PRIORIDADE</th>
+              <th>AÇÕES</th>
+             </tr>
+            </thead>
+            <tbody>
+             <tr>
+              <td>SEMAFORO 090</td>
+              <td>Rua do Cruzeiro → Rua São Pedro</td>
+              <td>15 m</td>
+              <td>Média</td>
+              <td><i class="fas fa-edit">
+               </i>
+               <i class="fas fa-trash">
+               </i></td>
+             </tr>
+             <tr>
+              <td>SEMAFORO 001</td>
+              <td>Rua Padre Cícero → Rua Pio X</td>
+              <td>20 m</td>
+              <td>Alta</td>
+              <td><i class="fas fa-edit">
+               </i>
+               <i class="fas fa-trash">
+               </i></td>
+             </tr>
+             <tr>
+              <td>SEMAFORO 011</td>
+              <td>Av. Duque de Caxias → Rua José Marrocos</td>
+              <td>15 m</td>
+              <td>Alta</td>
+              <td><i class="fas fa-edit">
+               </i>
+               <i class="fas fa-trash">
+               </i></td>
+             </tr>
+             <tr>
+              <td>SEMAFORO 024</td>
+              <td>Rua Santa Luzia → Rua São Benedito</td>
+              <td>17 m</td>
+              <td>Média</td>
+              <td><i class="fas fa-edit">
+               </i>
+               <i class="fas fa-trash">
+               </i></td>
+             </tr>
+             <tr>
+              <td>SEMAFORO 034</td>
+              <td>Av. Manoel Coelho de Alencar → Av. Pres. Castelo Branco</td>
+              <td>19 m</td>
+              <td>Baixa</td>
+              <td><i class="fas fa-edit">
+               </i>
+               <i class="fas fa-trash">
+               </i></td>
+             </tr>
+             <tr>
+              <form action="">
+              <td><input  placeholder="Semáforo" type="text"></td>
+              <td><input  placeholder="Cruzamento" type="text"></td>
+              <td><input  placeholder="Acionador" type="text"></td>
+              <td><input  placeholder="Prioridade" type="text"></td>
+              <td><button type="submit"><i class="fas fa-save"></i></button></td>
+              </form>
+              </tr>
+            </tbody>
+           </table>
+           <div class="mais">
+            <a href="#">
+             Adicionar Semáforo
+            </a>
+           </div>
+      </div>
+     </div>
+     <div class="right-panel">
+      <div class="painel">
+        <h2>
+            Usuários
+           </h2>
+           <table>
+            <thead>
+             <tr>
+              <th>LOGIN</th>
+              <th>SENHA</th>
+              <th>PRIVILÉGIOS</th>
+              <th>AÇÕES</th>
+             </tr>
+            </thead>
+            <tbody>
+             <tr>
+              <td>Joilson</td>
+              <td>********</td>
+              <td>Administrador</td>
+              <td><i class="fas fa-edit">
+               </i>
+               <i class="fas fa-trash">
+               </i></td>
+             </tr>
+             <tr>
+              <td>Claudionor</td>
+              <td>********</td>
+              <td>Comum</td>
+              <td><i class="fas fa-edit">
+               </i>
+               <i class="fas fa-trash">
+               </i></td>
+             </tr>
+             <tr>
+              <td>Abelardo</td>
+              <td>********</td>
+              <td>Comum</td>
+              <td><i class="fas fa-edit">
+               </i>
+               <i class="fas fa-trash">
+               </i></td>
+             </tr>
+             <tr>
+              <form action="">
+              <td><input  placeholder="Login" type="text"></td>
+              <td><input  placeholder="Senha" type="password"></td>
+              <td><select name="privilegios" id="">
+                <option value="comum">Comum</option>
+                <option value="adm">Administrador</option>
+              </select></td>
+              <td><button type="submit"><i class="fas fa-save"></i></button></td>
+              </form>
+              </tr>
+            </tbody>
+           </table>
+           <div class="mais">
+            <a href="#">
+             Adicionar Usuário
+            </a>
+           </div> 
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
